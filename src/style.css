@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Verdana', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 500px;
+  margin: 100px auto;
+  border: 1px solid #ddd;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+#list-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ddd;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  padding: 0 15px;
+}
+
+#title-icon,
+#add-icon {
+  cursor: pointer;
+}
+
+#item-icon {
+  cursor: all-scroll;
+}
+
+#input-area {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 0 15px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+label {
+  margin-left: 10px;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  padding: 0 15px;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+}
+
+.bottom {
+  height: 55px;
+  background-color: #ddd;
+  text-align: center;
+  padding: 20px;
+}
+
+#clear {
+  font-size: 14px;
+  cursor: pointer;
+  color: rgb(22, 22, 22);
+}
+
+#clear:hover {
+  text-decoration: underline;
+}
