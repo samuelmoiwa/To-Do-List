@@ -1,6 +1,3 @@
-/* eslint-disable no-restricted-globals */
-/* eslint-disable no-alert */
-/* eslint-disable no-lonely-if */
 import removeIcon from '../icons/remove.png';
 
 const icon3 = new Image();
@@ -121,6 +118,7 @@ export default class ToDo {
         alert.innerText = 'List is empty.';
         alert.style.display = 'flex';
       } else {
+        // eslint-disable-next-line no-lonely-if, no-restricted-globals, no-alert
         if (confirm('All items will be remove perminately. Are you sure?')) {
           toDos = [];
           localStorage.setItem('toDos', JSON.stringify(toDos));
