@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst tasks = [\n  {\n    description: 'Try to love webpack',\n    completed: false,\n    index: 0,\n  },\n  {\n    description: 'Order food',\n    completed: false,\n    index: 1,\n  },\n  {\n    description: 'Eat food',\n    completed: false,\n    index: 2,\n  },\n  {\n    description: 'Go to bed',\n    completed: false,\n    index: 3,\n  },\n];\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tasks);\n\n//# sourceURL=webpack://to-do-list/./src/modules/toDos.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst tasks = [\n  {\n    description: 'How to use webpack',\n    completed: false,\n    index: 0,\n  },\n  {\n    description: 'The important of webpack',\n    completed: false,\n    index: 1,\n  },\n  {\n    description: 'How to properly setup webpack',\n    completed: false,\n    index: 2,\n  },\n  {\n    description: 'Why choose webpack',\n    completed: false,\n    index: 3,\n  },\n];\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tasks);\n\n//# sourceURL=webpack://to-do-list/./src/modules/toDos.js?");
 
 /***/ }),
 
