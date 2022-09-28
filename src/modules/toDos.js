@@ -1,21 +1,21 @@
 const tasks = [
   {
-    description: 'Try to love webpack',
+    description: 'How to use webpack',
     completed: false,
     index: 0,
   },
   {
-    description: 'Order food',
+    description: 'The important of webpack',
     completed: false,
     index: 1,
   },
   {
-    description: 'Eat food',
+    description: 'How to properly setup webpack',
     completed: false,
     index: 2,
   },
   {
-    description: 'Go to bed',
+    description: 'Why choose webpack',
     completed: false,
     index: 3,
   },
