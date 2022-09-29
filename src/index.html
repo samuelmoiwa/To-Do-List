@@ -3,24 +3,32 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title></title>
+    <title>To-Do List</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
 <body>
-    <main>
-        <div id="list-title">
-          <h1>Today's To Do</h1>
-          <span id="title-icon"></span>
-        </div>
-        <div id="input-area">
-          <input type="text" placeholder="Add to your list...">
-          <span id="add-icon"></span>
-        </div>
-        <ul id="do-list"></ul>
-        <div class="bottom">
-          <p id="clear">Clear all completed.</p>
-        </div>
-      </main>
+
+  <main>
+    <section>
+      
+      <div id="list-title">
+        <h1>To Do's List Items</h1>
+        <span id="title-icon" title="Reset List"></span>
+      </div>
+      
+      <div id="input-area">
+        <input type="text" placeholder="Add to list..." id="do-input">
+        <span id="add-icon" title="Add to List"></span>
+      </div>
+      <div class="todo_list_div">
+      <ul id="do-list"></ul>
+      </div>
+      <div class="bottom">
+        <a href="#" id="clear">Clear all completed.</a>
+      </div>
+    </section>
+    <p class="alert"></p>
+  </main>
     
 </body>
 </html>
