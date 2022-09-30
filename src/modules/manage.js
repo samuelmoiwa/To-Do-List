@@ -57,9 +57,7 @@ export default class ToDo {
         <span id="item-icon">
           <img src="${icon3.src}" class="remove" id="${task.id}" alt="Remove Task" title="Remove Task">
         </span>
-      </li>
-    
-      `;
+      </li>`;
     });
   }
 
