@@ -1,8 +1,10 @@
+/* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
 import './style.css';
 import titleIcon from './icons/refresh.png';
 import addIcon from './icons/add.png';
 import ToDo from './modules/manage.js';
+import show from './modules/show';
 import check from './modules/check.js';
 
 const titleSpan = document.getElementById('title-icon');
@@ -16,7 +18,7 @@ titleSpan.appendChild(icon1);
 addSpan.appendChild(icon2);
 
 ToDo.add();
-ToDo.show();
+show();
 ToDo.remove();
 ToDo.edit();
 ToDo.clear();
