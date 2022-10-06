@@ -3,8 +3,12 @@
 import './style.css';
 import titleIcon from './icons/refresh.png';
 import addIcon from './icons/add.png';
-import ToDo from './modules/manage.js';
+import ClassToDo from './modules/manage.js';
 import show from './modules/show';
+import remove from './modules/remove';
+import edit from './modules/edit';
+import reset from './modules/resetList';
+import clear from './modules/clearCheckItems';
 import check from './modules/check.js';
 
 const titleSpan = document.getElementById('title-icon');
@@ -17,10 +21,10 @@ icon2.src = addIcon;
 titleSpan.appendChild(icon1);
 addSpan.appendChild(icon2);
 
-ToDo.add();
+ClassToDo.addItems();
 show();
-ToDo.remove();
-ToDo.edit();
-ToDo.clear();
+remove();
+edit();
+clear();
 check();
-ToDo.reset();
+reset();
