@@ -36,31 +36,6 @@ export default class ToDo {
     });
   }
 
-  static show() {
-    const todoList = document.getElementById('do-list');
-    const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
-    let inputCheck = '';
-    todoList.innerHTML = '';
-    toDos.forEach((task) => {
-      if (task.completed === false) {
-        inputCheck = '';
-      } else {
-        inputCheck = 'checked';
-      }
-      todoList.innerHTML += `
-  
-      <li>
-        <div class="item-info">
-          <input ${inputCheck} type="checkbox" class="check" id="input${task.index}">
-          <input id="${task.index}" class="task-item" value="${task.description}">
-        </div>
-        <span id="item-icon">
-          <img src="${icon3.src}" class="remove" id="${task.id}" alt="Remove Task" title="Remove Task">
-        </span>
-      </li>`;
-    });
-  }
-
   static remove() {
     const removeIcon = document.querySelectorAll('.remove');
     removeIcon.forEach((icon) => {
