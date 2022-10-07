@@ -22,9 +22,9 @@ export default function showListItems() {
         <input ${inputCheckBox} type="checkbox" class="check" id="input${task.index}">
         <input id="${task.index}" class="task-item" value="${task.description}">
       </div>
-      <span id="item-icon">
+      <div id="item-icon">
         <img src="${iconDelete.src}" class="remove" id="${task.id}" alt="Remove Task" title="Remove Task">
-      </span>
+      </div>
     </li>`;
   });
 }
