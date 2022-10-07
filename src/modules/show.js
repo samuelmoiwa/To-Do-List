@@ -5,10 +5,10 @@ iconDelete.src = removeIcon;
 
 // eslint-disable-next-line import/prefer-default-export
 export default function showListItems() {
-  const toDosLocalStorage = JSON.parse(localStorage.getItem('toDos') || '[]');
   const todoList = document.getElementById('do-list');
-  let inputCheckBox = '';
+  const toDosLocalStorage = JSON.parse(localStorage.getItem('toDos') || '[]');
   todoList.innerHTML = '';
+  let inputCheckBox = '';
   toDosLocalStorage.forEach((task) => {
     if (task.completed === false) {
       inputCheckBox = '';
