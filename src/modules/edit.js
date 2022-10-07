@@ -1,17 +1,18 @@
-export default function edit() {
-  const taskItems = document.querySelectorAll('.task-item');
-  taskItems.forEach((item) => {
+export default function editListItems() {
+  const listItems = document.querySelectorAll('.task-item');
+  listItems.forEach((item) => {
     item.addEventListener('click', () => {
-      item.style.background = '#ddd';
-      item.setAttribute('contenteditable', 'true');
+      item.style.background = '#4b69c2';
+      item.setAttribute('editContent', 'true');
     });
+
     item.addEventListener('focusout', () => {
-      const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
+      const toDoItems = JSON.parse(localStorage.getItem('toDos') || '[]');
       item.style.background = 'none';
-      toDos.forEach((task) => {
+      toDoItems.forEach((task) => {
         if (task.index.toString() === item.id) {
           task.description = item.value;
-          localStorage.setItem('toDos', JSON.stringify(toDos));
+          localStorage.setItem('toDos', JSON.stringify(toDoItems));
         }
       });
     });
