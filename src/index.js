@@ -24,10 +24,10 @@ addSpan.appendChild(iconAdd);
 
 iconTitle.classList.add('reset');
 
-checkBox();
-showListItems();
 ClassToDo.addItems();
-reset();
+showListItems();
 remove();
 editListItems();
 clear();
+checkBox();
+reset();
