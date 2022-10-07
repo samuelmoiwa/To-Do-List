@@ -4,8 +4,8 @@ export default function remove() {
     icon.addEventListener('click', (e) => {
       let toDoItems = JSON.parse(localStorage.getItem('toDos') || '[]');
       toDoItems = toDoItems.filter((task) => task.id !== e.target.id);
-      toDoItems.forEach((task, i) => {
-        task.index = i + 1;
+      toDoItems.forEach((task, index) => {
+        task.index = index + 1;
       });
       localStorage.setItem('toDos', JSON.stringify(toDoItems));
       window.location.reload();
