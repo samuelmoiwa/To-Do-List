@@ -3,28 +3,31 @@
 import './style.css';
 import titleIcon from './icons/refresh.png';
 import addIcon from './icons/add.png';
-import ClassToDo from './modules/manage.js';
-import show from './modules/show';
-import remove from './modules/remove';
-import edit from './modules/edit';
-import reset from './modules/resetList';
-import clear from './modules/clearCheckItems';
-import check from './modules/check.js';
+import ClassToDo from './modules/addToList.js';
+import showListItems from './modules/show.js';
+import remove from './modules/remove.js';
+import editListItems from './modules/edit.js';
+import reset from './modules/resetList.js';
+import clear from './modules/clearCheckItems.js';
+import checkBox from './modules/check.js';
 
-const titleSpan = document.getElementById('title-icon');
 const addSpan = document.getElementById('add-icon');
-const icon1 = new Image();
-icon1.src = titleIcon;
-icon1.classList.add('reset');
-const icon2 = new Image();
-icon2.src = addIcon;
-titleSpan.appendChild(icon1);
-addSpan.appendChild(icon2);
+const titleSpan = document.getElementById('title-icon');
+
+const iconTitle = new Image();
+iconTitle.src = titleIcon;
+titleSpan.appendChild(iconTitle);
+
+const iconAdd = new Image();
+iconAdd.src = addIcon;
+addSpan.appendChild(iconAdd);
+
+iconTitle.classList.add('reset');
 
 ClassToDo.addItems();
-show();
+showListItems();
 remove();
-edit();
+editListItems();
 clear();
-check();
+checkBox();
 reset();
