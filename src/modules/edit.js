@@ -2,8 +2,8 @@ export default function editListItems() {
   const listItems = document.querySelectorAll('.task-item');
   listItems.forEach((item) => {
     item.addEventListener('click', () => {
-      item.style.background = '#4b69c2';
       item.setAttribute('editContent', 'true');
+      item.style.background = '#4b69c2';
     });
 
     item.addEventListener('focusout', () => {
