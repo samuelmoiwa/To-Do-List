@@ -1,31 +1,31 @@
 import removeIcon from '../icons/remove.png';
 
-const icon3 = new Image();
-icon3.src = removeIcon;
+const iconDelete = new Image();
+iconDelete.src = removeIcon;
 
 // eslint-disable-next-line import/prefer-default-export
-export default function show() {
+export default function showListItems() {
+  const toDosLocalStorage = JSON.parse(localStorage.getItem('toDos') || '[]');
   const todoList = document.getElementById('do-list');
-  const toDos = JSON.parse(localStorage.getItem('toDos') || '[]');
-  let inputCheck = '';
+  let inputCheckBox = '';
   todoList.innerHTML = '';
-  toDos.forEach((task) => {
+  toDosLocalStorage.forEach((task) => {
     if (task.completed === false) {
-      inputCheck = '';
+      inputCheckBox = '';
     } else {
-      inputCheck = 'checked';
+      inputCheckBox = 'checked';
     }
     todoList.innerHTML += `
 
     <li>
       <div class="item-info">
-        <input ${inputCheck} type="checkbox" class="check" id="input${task.index}">
+        <input ${inputCheckBox} type="checkbox" class="check" id="input${task.index}">
         <input id="${task.index}" class="task-item" value="${task.description}">
       </div>
       <span id="item-icon">
-        <img src="${icon3.src}" class="remove" id="${task.id}" alt="Remove Task" title="Remove Task">
+        <img src="${iconDelete.src}" class="remove" id="${task.id}" alt="Remove Task" title="Remove Task">
       </span>
     </li>`;
   });
 }
-show();
+showListItems();
