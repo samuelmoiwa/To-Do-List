@@ -16,13 +16,12 @@ export default function showListItems() {
       inputCheckBox = 'checked';
     }
     todoList.innerHTML += `
-
     <li>
       <div class="item-info">
         <input ${inputCheckBox} type="checkbox" class="check" id="input${task.index}">
         <input id="${task.index}" class="task-item" value="${task.description}">
       </div>
-      <div id="item-icon">
+      <div class="item_icon">
         <img src="${iconDelete.src}" class="remove" id="${task.id}" alt="Remove Task" title="Remove Task">
       </div>
     </li>`;
