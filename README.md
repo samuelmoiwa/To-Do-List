@@ -6,7 +6,7 @@
 - simple HTML, CSS & JavaScript code, that designs to do items.
 - configure with linters 
 
-[Live Demo](https://samuelmoiwa.github.io/To-Do-List/)
+## [Live Demo](https://samuelmoiwa.github.io/To-Do-List/)
 
 # Getting Started
 
